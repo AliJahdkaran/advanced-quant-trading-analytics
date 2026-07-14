@@ -19,5 +19,5 @@ while True:
 
 
 df = pd.DataFrame(all_candles, columns=['Timestamp', 'Open', 'High', 'Low', 'Close', 'Volume'])
-df['Timestamp'] = pd.to_datetime(df['Timestamp'], unit='ms')
-df.to_csv('data\\raw\\btc_1h_1000candles.csv', index=False)
+df['Timestamp'] = pd.to_datetime(df['Timestamp'], unit='ms').dt.tz_localize('UTC')
+df.to_csv('data\\raw\\btcusdt-1h-2023-2026', index=False)
