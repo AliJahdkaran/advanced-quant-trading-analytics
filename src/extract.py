@@ -20,4 +20,4 @@ while True:
 
 df = pd.DataFrame(all_candles, columns=['Timestamp', 'Open', 'High', 'Low', 'Close', 'Volume'])
 df['Timestamp'] = pd.to_datetime(df['Timestamp'], unit='ms').dt.tz_localize('UTC')
-df.to_csv('data\\raw\\btcusdt-1h-2023-2026', index=False)
+df.to_csv('data\\raw\\btcusdt-1h-2023-2026.csv', index=False)
