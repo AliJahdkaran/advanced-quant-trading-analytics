@@ -9,7 +9,7 @@ all_candles = []
 print('Fetching data for BTC/USDT...')
 
 while True:
-    batch_data = exchange.fetch_ohlcv(symbol='BTC/USDT',timeframe='4h' , since=start_time, limit=1000)
+    batch_data = exchange.fetch_ohlcv(symbol='BTC/USDT',timeframe='1h' , since=start_time, limit=1000)
     if len(batch_data) == 0:
         break
     all_candles.extend(batch_data)
@@ -20,4 +20,4 @@ while True:
 
 df = pd.DataFrame(all_candles, columns=['Timestamp', 'Open', 'High', 'Low', 'Close', 'Volume'])
 df['Timestamp'] = pd.to_datetime(df['Timestamp'], unit='ms').dt.tz_localize('UTC')
-df.to_csv('data\\raw\\btcusdt-4h-2023-2026.csv', index=False)
+df.to_csv('data\\raw\\btcusdt-1h-2023-2026.csv', index=False)
