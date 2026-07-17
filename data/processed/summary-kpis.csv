@@ -1,0 +1,2 @@
+total_trades,win_rate_pct,profit_factor,max_drawdown_pct,sharpe_ratio,sortino_ratio,total_return_pct,compounded_return_pct,avg_win_pct,avg_loss_pct
+276,38.77,1.24,-22.47,0.84,3.04,45.5,51.13,2.22,-1.14
