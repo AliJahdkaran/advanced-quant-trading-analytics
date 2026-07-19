@@ -5,9 +5,10 @@
 # 🇮🇷 Advanced Quant Trading Analytics
 
 
-*![Dashboard Overview](dashboard/assets/dashboard.gif)*
-
 این پروژه یک پورتفولیوی جامع در حوزه تحلیل داده‌های کمی (Quantitative Data Analysis) است که فرآیند کامل (End-to-End) کار با داده‌های واقعی بازارهای مالی را نشان می‌دهد. هدف این پروژه، فراتر از یک بک‌تست ساده، نمایش توانایی استخراج داده‌های خام، مهندسی ویژگی‌های مالی، پیاده‌سازی منطق الگوریتمی و در نهایت مصورسازی مینیمال و مدیریتیِ نتایج است.
+
+
+*![Dashboard Overview](dashboard/assets/dashboard.gif)*
 
 ## مسیر استخراج داده‌ها (Data Pipeline)
 
